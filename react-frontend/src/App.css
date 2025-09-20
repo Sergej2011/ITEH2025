@@ -191,7 +191,7 @@ html, body {
   font-size: 0.95rem;
 }
 
-.auth-form .form-control {
+.auth-form .form-control { 
   padding: 0.75rem 1rem;
   border: 2px solid #e9ecef;
   border-radius: 10px;
