@@ -22,7 +22,7 @@ class SimpleProductSeeder extends Seeder
                 'role' => 'user'
             ]
         );
-
+ 
         $user2 = User::updateOrCreate(
             ['email' => 'test2@example.com'],
             [
