@@ -88,7 +88,7 @@ class User extends Authenticatable
     }
 
     public function scopeUsers($query)
-    {
+    { 
         return $query->where('role', self::ROLE_USER);
     }
 }
