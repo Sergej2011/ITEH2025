@@ -7,7 +7,7 @@ interface SearchBarProps {
 } 
 
 const SearchBar: React.FC<SearchBarProps> = ({ 
-  onSearch, 
+  onSearch,  
   placeholder = "Pretraži proizvode...",
   className = ""
 }) => {

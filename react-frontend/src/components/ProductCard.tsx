@@ -7,7 +7,7 @@ interface Product {
   title: string
   description: string
   price: number
-  currency: string
+  currency: string 
   image_path?: string
   status: string
   user?: {

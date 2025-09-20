@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext'
 
 const Navbar: React.FC = () => { 
   const { user, logout } = useAuth()
-  const navigate = useNavigate()
+  const navigate = useNavigate() 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const dropdownRef = useRef<HTMLLIElement>(null)
