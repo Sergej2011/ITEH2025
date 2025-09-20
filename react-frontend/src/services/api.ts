@@ -1,6 +1,6 @@
 // Simple API service without axios dependency
 const API_BASE_URL = 'http://127.0.0.1:8000/api'
-
+ 
 class ApiService {
   private token: string | null = null
 
