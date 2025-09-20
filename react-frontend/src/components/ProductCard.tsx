@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 
-interface Product {
+interface Product { 
   id: number
   title: string
   description: string

@@ -4,7 +4,7 @@ interface SearchBarProps {
   onSearch: (query: string) => void
   placeholder?: string
   className?: string
-}
+} 
 
 const SearchBar: React.FC<SearchBarProps> = ({ 
   onSearch, 

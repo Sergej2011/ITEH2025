@@ -33,7 +33,7 @@ const CurrencyConverter: React.FC<CurrencyConverterProps> = ({
     if (!amount || parseFloat(amount) <= 0) {
       setError('Unesite validnu količinu')
       return
-    }
+    } 
 
     try {
       setLoading(true)
