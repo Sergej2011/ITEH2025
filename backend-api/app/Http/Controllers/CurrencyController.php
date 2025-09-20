@@ -27,7 +27,7 @@ class CurrencyController extends Controller
             'EUR' => ['RSD' => 117.65, 'USD' => 1.08, 'GBP' => 0.86],
             'USD' => ['RSD' => 108.70, 'EUR' => 0.93, 'GBP' => 0.79],
             'GBP' => ['RSD' => 136.99, 'EUR' => 1.16, 'USD' => 1.27],
-        ];
+        ]; 
 
         $rate = $rates[$from][$to] ?? null;
 

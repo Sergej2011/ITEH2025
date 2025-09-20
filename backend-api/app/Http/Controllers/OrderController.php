@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class OrderController extends Controller
-{
+{ 
     public function index(Request $request)
     {
         $query = Order::with(['buyer', 'seller', 'product']);

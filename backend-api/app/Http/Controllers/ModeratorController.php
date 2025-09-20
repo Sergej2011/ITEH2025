@@ -7,7 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 
 class ModeratorController extends Controller
-{
+{ 
     /**
      * Prikaži proizvode koji čekaju odobrenje (samo moderator)
      */

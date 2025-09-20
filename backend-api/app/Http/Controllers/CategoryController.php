@@ -22,7 +22,7 @@ class CategoryController extends Controller
         ]);
 
         $data['slug'] = Str::slug($data['name']);
-
+ 
         $category = Category::create($data);
 
         return response()->json($category, 201);

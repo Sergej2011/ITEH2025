@@ -9,7 +9,7 @@ class CountryController extends Controller
 {
     // GET /api/countries
     public function index()
-    {
+    { 
         $data = Cache::remember('countries:min', 86400, function () {
             $res = Http::get('https://restcountries.com/v3.1/all', [
                 'fields' => 'name,cca2,currencies'

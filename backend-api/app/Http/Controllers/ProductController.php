@@ -48,7 +48,7 @@ class ProductController extends Controller
         $sortBy = $request->get('sort_by', 'created_at');
         $sortDir = $request->get('sort_dir', 'desc');
         $query->orderBy($sortBy, $sortDir);
-
+ 
         // Paginacija
         $perPage = $request->get('per_page', 12);
         $products = $query->paginate($perPage);
