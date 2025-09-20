@@ -134,7 +134,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Ili koristi CMD umesto PowerShell-a
 cmd /c "npm run dev"
 ```
-
+ 
 ### Problem: Dependencies konflikti
 **Rešenje:**
 ```bash
