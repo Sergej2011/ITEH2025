@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import { apiService } from '../services/api'
 
-interface User {
+interface User { 
   id: number
   name: string
   email: string
