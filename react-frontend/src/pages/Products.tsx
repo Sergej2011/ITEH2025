@@ -127,7 +127,7 @@ const Products: React.FC = () => {
     try {
       setDeleting(product.id)
       await apiService.deleteProduct(product.id)
-      
+       
       // Ukloni proizvod iz liste
       setProducts(prev => prev.filter(p => p.id !== product.id))
       

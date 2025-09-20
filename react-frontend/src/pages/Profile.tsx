@@ -10,7 +10,7 @@ interface UserProfile {
   phone?: string
   role: string
   created_at: string
-}
+} 
 
 const Profile: React.FC = () => {
   const { user, logout } = useAuth()

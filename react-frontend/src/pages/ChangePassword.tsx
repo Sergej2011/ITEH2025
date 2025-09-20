@@ -7,7 +7,7 @@ const ChangePassword: React.FC = () => {
     currentPassword: '',
     newPassword: '',
     confirmPassword: ''
-  })
+  }) 
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
   const [loading, setLoading] = useState(false)

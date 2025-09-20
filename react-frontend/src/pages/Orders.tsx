@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 interface Order {
   id: number
   status: string
-  total_amount: number
+  total_amount: number 
   total_in_rsd: number
   currency: string
   notes?: string

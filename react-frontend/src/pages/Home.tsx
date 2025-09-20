@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     totalProducts: 0,
     totalUsers: 0,
     totalOrders: 0
-  })
+  }) 
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

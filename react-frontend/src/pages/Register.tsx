@@ -81,7 +81,7 @@ const Register: React.FC = () => {
                 </div>
               </div>
             )}
-
+ 
             {success && (
               <div className="alert alert-success d-flex align-items-center" role="alert">
                 <i className="fas fa-check-circle me-3"></i>

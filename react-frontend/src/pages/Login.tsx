@@ -58,7 +58,7 @@ const Login: React.FC = () => {
                 <i className="fas fa-exclamation-triangle me-2"></i>
                 {error}
               </div>
-            )}
+            )} 
 
             <form onSubmit={handleSubmit}>
               <div className="form-group">
