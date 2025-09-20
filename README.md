@@ -2,7 +2,7 @@
 
 Kompletna C2C (Consumer-to-Consumer) e-commerce platforma sa Laravel API backend-om i React frontend-om.
 
-## 🚀 Funkcionalnosti
+## 🚀 Funkcionalnosti 
 
 ### Backend (Laravel API)
 - ✅ **Autentifikacija** - Registracija, prijava, odjava sa Laravel Sanctum
