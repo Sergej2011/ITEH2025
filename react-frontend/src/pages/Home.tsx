@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { apiService } from '../services/api'
 import CurrencyConverter from '../components/CurrencyConverter'
-
+ 
 const Home: React.FC = () => {
   const [stats, setStats] = useState({
     totalProducts: 0,

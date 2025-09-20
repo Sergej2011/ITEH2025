@@ -11,7 +11,7 @@ interface UserProfile {
   role: string
   created_at: string
 } 
-
+ 
 const Profile: React.FC = () => {
   const { user, logout } = useAuth()
   const navigate = useNavigate()

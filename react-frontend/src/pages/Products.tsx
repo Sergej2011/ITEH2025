@@ -118,7 +118,7 @@ const Products: React.FC = () => {
     if (!user || user.role !== 'admin') {
       alert('Samo admin može da briše proizvode!')
       return
-    }
+    } 
 
     if (!confirm(`Da li ste sigurni da želite da obrišete proizvod "${product.title}"?`)) {
       return

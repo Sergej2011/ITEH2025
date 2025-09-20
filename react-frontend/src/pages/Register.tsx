@@ -72,7 +72,7 @@ const Register: React.FC = () => {
               </h2>
               <p className="text-muted">Kreiraj svoj nalog i počni da kupuješ/prodaješ</p>
             </div>
-
+ 
             {error && (
               <div className="alert alert-danger d-flex align-items-center" role="alert">
                 <i className="fas fa-exclamation-triangle me-3"></i>
