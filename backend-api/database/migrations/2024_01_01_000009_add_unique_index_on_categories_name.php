@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::table('categories', function (Blueprint $table) {
             $table->unique('name', 'categories_name_unique');
         });
-    }
+    } 
 
     public function down(): void
     {
