@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mxfile host="app.diagrams.net">
+  <diagram name="C2C ER Diagram" id="c2c_er_002">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+```
+    <!-- USERS -->
+    <mxCell id="users" value="USERS\nid PK\nname\nemail\npassword\nphone\nrole" style="shape=rectangle;rounded=1;fillColor=#AED6F1;strokeColor=#2E86C1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="160" height="160" as="geometry" />
+    </mxCell>
+
+    <!-- PRODUCTS -->
+    <mxCell id="products" value="PRODUCTS\nid PK\nuser_id FK\ntitle\ndescription\nprice\ncurrency\nimage_path\nstatus" style="shape=rectangle;rounded=1;fillColor=#A9DFBF;strokeColor=#27AE60;" vertex="1" parent="1">
+      <mxGeometry x="280" y="40" width="180" height="180" as="geometry" />
+    </mxCell>
+
+    <!-- ORDERS -->
+    <mxCell id="orders" value="ORDERS\nid PK\nbuyer_id FK\nseller_id FK\nproduct_id FK\ntotal_amount\nstatus" style="shape=rectangle;rounded=1;fillColor=#F9E79F;strokeColor=#D68910;" vertex="1" parent="1">
+      <mxGeometry x="280" y="260" width="180" height="160" as="geometry" />
+    </mxCell>
+
+    <!-- CATEGORIES -->
+    <mxCell id="categories" value="CATEGORIES\nid PK\nname\nslug" style="shape=rectangle;rounded=1;fillColor=#F5B7B1;strokeColor=#C0392B;" vertex="1" parent="1">
+      <mxGeometry x="40" y="260" width="160" height="120" as="geometry" />
+    </mxCell>
+
+    <!-- CATEGORY_PRODUCT -->
+    <mxCell id="category_product" value="CATEGORY_PRODUCT\ncategory_id FK\nproduct_id FK\nPK(category_id,product_id)" style="shape=rectangle;rounded=1;fillColor=#D7BDE2;strokeColor=#8E44AD;" vertex="1" parent="1">
+      <mxGeometry x="160" y="420" width="180" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- Relationships -->
+    <!-- USERS -> PRODUCTS 1:N -->
+    <mxCell id="rel_users_products" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#2E86C1;" edge="1" parent="1" source="users" target="products">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- USERS -> ORDERS (buyer) 1:N -->
+    <mxCell id="rel_users_orders_buyer" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#2E86C1;" edge="1" parent="1" source="users" target="orders">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- PRODUCTS -> ORDERS 1:N -->
+    <mxCell id="rel_products_orders" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#27AE60;" edge="1" parent="1" source="products" target="orders">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- CATEGORIES -> CATEGORY_PRODUCT N:N -->
+    <mxCell id="rel_categories_catprod" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#C0392B;" edge="1" parent="1" source="categories" target="category_product">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- PRODUCTS -> CATEGORY_PRODUCT N:N -->
+    <mxCell id="rel_products_catprod" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#27AE60;" edge="1" parent="1" source="products" target="category_product">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
+```
+
+  </diagram>
+</mxfile>

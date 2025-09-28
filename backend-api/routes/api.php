@@ -49,7 +49,7 @@ Route::middleware('auth:sanctum')->group(function () {
     // Statistike za sve korisnike
     Route::get('/statistics', [OrderController::class, 'statistics']); // Lične statistike
 });
-
+ 
 // ADMIN RUTE (samo admin)
 Route::middleware(['auth:sanctum', 'role:admin'])->prefix('admin')->group(function () {
     // Upravljanje korisnicima
