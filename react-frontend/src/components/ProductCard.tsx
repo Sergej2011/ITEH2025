@@ -12,7 +12,7 @@ interface Product {
   status: string
   user?: {
     name: string
-  }
+  } 
   categories?: Array<{
     id: number
     name: string

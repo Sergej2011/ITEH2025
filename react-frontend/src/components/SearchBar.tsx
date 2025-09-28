@@ -10,7 +10,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
   onSearch,  
   placeholder = "Pretraži proizvode...",
   className = ""
-}) => {
+}) => { 
   const [query, setQuery] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {

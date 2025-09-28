@@ -11,7 +11,7 @@ const CurrencyConverter: React.FC<CurrencyConverterProps> = ({
   onConvert,
   initialAmount = 1000,
   initialCurrency = 'RSD'
-}) => {
+}) => { 
   const [amount, setAmount] = useState(initialAmount.toString())
   const [fromCurrency, setFromCurrency] = useState(initialCurrency)
   const [toCurrency, setToCurrency] = useState('EUR')
