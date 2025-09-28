@@ -11,7 +11,7 @@ import AddProduct from './pages/AddProduct'
 import Orders from './pages/Orders'
 import Profile from './pages/Profile'
 import ChangePassword from './pages/ChangePassword'
-import './App.css'
+import './App.css' 
 
 function App() {
   return (
