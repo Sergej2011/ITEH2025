@@ -26,7 +26,7 @@ class AdminController extends Controller
      * Kreiraj novog korisnika (samo admin)
      */ 
     public function createUser(Request $request)
-    {
+    { 
         $data = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',

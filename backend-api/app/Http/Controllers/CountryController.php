@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
 class CountryController extends Controller
-{
+{ 
     // GET /api/countries
     public function index()
     { 

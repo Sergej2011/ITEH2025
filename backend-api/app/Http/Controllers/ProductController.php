@@ -63,7 +63,7 @@ class ProductController extends Controller
         // Proveri da li je korisnik admin ili moderator
         if (!in_array($user->role, ['admin', 'moderator'])) {
             return response()->json(['message' => 'Samo admin i moderator mogu da dodaju proizvode'], 403);
-        }
+        } 
 
         $data = $request->validate([
             'title' => 'required|string|max:255',

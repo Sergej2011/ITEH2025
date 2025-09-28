@@ -35,7 +35,7 @@ class OrderController extends Controller
 
         return response()->json($orders);
     }
-
+ 
     public function store(Request $request)
     {
         $data = $request->validate([

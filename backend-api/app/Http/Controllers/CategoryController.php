@@ -26,7 +26,7 @@ class CategoryController extends Controller
         $category = Category::create($data);
 
         return response()->json($category, 201);
-    }
+    } 
 
     public function show(Category $category)
     {
